@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    //"noImplicitAny": true,
+    //"module": "commonjs",  
+    //"sourceMap": true,  disabled for speed Reasons ;D
+    "incremental": true,
+    "outDir": "./public"
+  },
+  "strict": true,
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "threejs-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bul.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "blob": "^0.0.5",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "gsap": "^3.7.1",
+    "jquery": "^3.6.0",
+    "json": "^9.0.6",
+    "nodemon": "^1.19.4",
+    "three": "^0.125.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.2.1"
+  },
+  "scripts": {
+    "dev": "tsc --watch & nodemon -e ts dist --pretty",
+    "build": "webpack -p --content-base ./src",
+    "do": "webpack -p --content-base ./src --watch",
+    "start": "webpack-dev-server -d --content-base ./"
+  },
+  "author": "rmj",
+  "license": "ISC"
+}
